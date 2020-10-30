@@ -31,8 +31,15 @@ namespace Nav.Page.Konovalov
             buttons[1].Clicked += MainPage_Clicked1;
             buttons[2].Text = "Entry";
             buttons[2].Clicked += MainPage_Clicked2;
-            buttons[3].Text = "PIcker";
+            buttons[3].Text = "Picker";
             buttons[3].Clicked += MainPage_Clicked3;
+            buttons[4].Text = "DateTime (current)";
+            buttons[4].Clicked += MainPage_Clicked4;
+        }
+
+        private async void MainPage_Clicked4(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Tanapaev());
         }
 
         private async void MainPage_Clicked3(object sender, EventArgs e)

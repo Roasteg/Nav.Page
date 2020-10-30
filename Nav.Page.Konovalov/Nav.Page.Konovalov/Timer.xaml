@@ -5,7 +5,26 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Picker x:Name="Nvidia"></Picker>
+            <Picker x:Name="hardware"
+                    ></Picker>
+            <Label x:Name="nvidianfo"
+                   FontSize="Large"
+                   Text="Nvidia — американская технологическая компания, разработчик графических процессоров и систем-на-чипе (SoC). Разработки компании получили распространение в индустрии видеоигр, сфере профессиональной визуализации, области высокопроизводительных вычислений и автомобильной промышленности, где бортовые компьютеры Nvidia используются в качестве основы для беспилотных автомобилей."
+                   IsVisible="false"
+                   />
+            <Image x:Name="Nvid" Source="Resources/drawable/nvidialogo.jpg" HeightRequest="150" WidthRequest="150" IsVisible="false"/>
+            <Label x:Name="amdinfo"
+                   FontSize="Large"
+                   IsVisible="false"
+                   Text="Advanced Micro Devices, Inc. — производитель интегральной микросхемной электроники. Один из крупнейших производителей центральных процессоров, графических процессоров и адаптеров (после приобретения ATI Technologies в 2006 году), материнских плат и чипсетов для них, также продает оперативную память и твердотельные накопители под торговой маркой Radeon."
+                   />
+            <Image x:Name="amd" Source="Resources/drawable/amd.png" IsVisible="false" HeightRequest="150" WidthRequest="150" />
+            <Label x:Name="intelinfo" 
+                   FontSize="Large"
+                   IsVisible="false"
+                   Text="Intel Corp. — транснациональная корпорация, разработчик и производитель электронных устройств и компьютерных компонентов, таких как: микропроцессоры и наборы системной логики (чипсеты) для клиентских вычислительных систем и для дата-центров, ПЛИС и FPGA-чипы (Altera), чипы для систем искусственного интеллекта Mobileye, Nervana, Habana и для интернета вещей, энергонезависимая память и сетевые решения." 
+                   />
+            <Image x:Name="intel" Source="Resources/drawable/intel.jpg" IsVisible="false" WidthRequest="150" HeightRequest="150" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
