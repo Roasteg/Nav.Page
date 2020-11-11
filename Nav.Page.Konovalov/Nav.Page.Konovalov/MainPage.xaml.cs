@@ -35,6 +35,20 @@ namespace Nav.Page.Konovalov
             buttons[3].Clicked += MainPage_Clicked3;
             buttons[4].Text = "DateTime (current)";
             buttons[4].Clicked += MainPage_Clicked4;
+            buttons[5].Text = "TextToSpeech";
+            buttons[5].Clicked += MainPage_Clicked5;
+            buttons[6].Text = "Map";
+            buttons[6].Clicked += MainPage_Clicked6;
+        }
+
+        private async void MainPage_Clicked6(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Map());
+        }
+
+        private async void MainPage_Clicked5(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TTS());
         }
 
         private async void MainPage_Clicked4(object sender, EventArgs e)

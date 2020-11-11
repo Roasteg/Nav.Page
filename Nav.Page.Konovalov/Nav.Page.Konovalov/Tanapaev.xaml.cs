@@ -16,6 +16,7 @@ namespace Nav.Page.Konovalov
         public Tanapaev()
         {
             InitializeComponent();
+            rightnow.Time = DateTime.Now.TimeOfDay;
             today.Date = DateTime.Now;
         }
     }
